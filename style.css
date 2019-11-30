@@ -1,0 +1,22 @@
+.box-conversion-img {
+  max-width: 60px;
+  max-height: 60px;
+}
+.font-input-heads {
+  font-size: 20px;
+  font-family: Tomorrow, sans-serif;
+}
+.logo-font {
+  font-size: 40px;
+  font-family: Tomorrow, sans-serif;
+}
+#display-output {
+  font-family: "Tomorrow", sans-serif;
+}
+#from-currency-display-font {
+  font-size: 40px;
+  font-family: "Tomorrow", sans-serif;
+}
+.footer-custom {
+  font-family: Tomorrow, sans-serif;
+}

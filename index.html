@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Autour+One|Press+Start+2P|Tomorrow|Zilla+Slab+Highlight&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top text-center"
+    >
+      <p
+        class="navbar-brand text-align-center p-3 text-white logo-font col-12 mb-0  text-white"
+      >
+        Simple Currency Converter <br />
+        <span class="font-input-heads text-muted"
+          >Real-time Currency Conversion for 166 World Currencies</span
+        >
+      </p>
+    </nav>
+    <br />
+    <!-- Form Input -->
+    <div class="container-fluid">
+      <div class="form">
+        <div class="form-row ml-5">
+          <!-- Input Amount -->
+          <div
+            class="form-group col-md-3 col-sm-12 col-xs-12 font-input-heads p-3 text-primary"
+          >
+            <label for="inputAmount">Amount</label>
+            <input type="text" class="form-control" id="inputAmount" required />
+          </div>
+          <!-- Currency To Convert From -->
+          <div
+            class="form-group col-md-3  col-sm-12 col-xs-12 font-input-heads p-3 text-primary"
+          >
+            <label for="fromCurrency">From</label>
+            <select id="fromCurrency" class="form-control">
+              <option>Choose...</option>
+            </select>
+          </div>
+          <!-- Conversion Logo -->
+          <div
+            class="form-group col-md-1 col-sm-12 col-xs-12 align-middle text-center"
+          >
+            <img
+              class="col-md-12 box-conversion-img my-md-5 mx-md-4 p-1 text-center"
+              src="https://banner2.cleanpng.com/20180720/vwa/kisspng-computer-icons-button-update-clip-art-alexis-snchez-5b516c3b6d9af0.831798481532062779449.jpg"
+              alt="Conversion Logo"
+            />
+          </div>
+          <!-- Currency To Convert To -->
+          <div
+            class="form-group col-md-3  col-sm-12 col-xs-12 font-input-heads p-3 text-primary"
+          >
+            <label for="toCurrency">To</label>
+            <select id="toCurrency" class="form-control">
+              <option value="--">Choose...</option>
+            </select>
+          </div>
+          <!-- Conversion Button -->
+          <div class="col-md-2 col-sm-12 col-xs-12 align-middle">
+            <button
+              class="btn btn-primary mx-3 p-md-2.4 btn-lg my-5 mx-1 text-center"
+              id="conv-btn"
+            >
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Conversion Result Display -->
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            id="display-output"
+            class="text-center display-3 display text-info col-12 display-out"
+          ></div>
+        </div>
+      </div>
+      <br /><br /><br /><br /><br />
+      <!-- Footer -->
+      <footer
+        class="page-footer footer-custom font-small blue pt-4 navbar-fixed-bottom"
+      >
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          © 2019 Copyright:
+          <a href="https://www.masaischool.com/"> masaischool.com</a>
+        </div>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
